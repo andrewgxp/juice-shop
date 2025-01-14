@@ -21,7 +21,7 @@ jobs:
         npm install --ignore-scripts --legacy-peer-deps
     - name: "Fix everything which can be fixed"
       run: 'npm run lint:fix'
-    - uses: stefanzweifel/git-auto-commit-action@3ea6ae190baf489ba007f7c92608f33ce20ef04a #v4.16.0
+    - uses: stefanzweifel/git-auto-commit-action@e348103e9026cc0eee72ae06630dbe30c8bf7a79 #v5.1.0
       with:
         commit_message: "Auto-fix linting issues"
         branch: ${{ github.head_ref }}
